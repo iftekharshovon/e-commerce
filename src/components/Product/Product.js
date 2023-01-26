@@ -9,7 +9,7 @@ const Product = ({product, handleAddToCart}) => {
     
     return (
         <div className='product'>
-            <img src={img} alt=""></img>
+            <img src={img ? img : '../../images/favicon.ico'} alt=""></img>
             <div className='product-info'>
                 <p className='product-name'>{name}</p>
                 <p>Price: ${price}</p>
